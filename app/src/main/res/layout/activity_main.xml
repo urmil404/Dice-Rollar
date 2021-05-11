@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textSize="50dp"
+        android:textSize="1in"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -26,25 +26,26 @@
         android:layout_height="120dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonroll"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509"
         app:lottie_autoPlay="false"
         app:lottie_fileName="dice.json"
-        app:lottie_loop="true" />
+        app:lottie_loop="false"
+        app:lottie_speed="2" />
 
     <Button
         android:id="@+id/buttonroll"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingHorizontal="30dp"
-        android:paddingVertical="30dp"
-        android:text="Roll Dice"
+        android:layout_width="349dp"
+        android:layout_height="49dp"
+        android:onClick="rollDiceClicked"
+        android:text="@string/roll_dice"
+        android:background="@drawable/custom_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.748"
-        android:onClick="rollDiceClicked"/>
+        app:layout_constraintVertical_bias="0.811" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

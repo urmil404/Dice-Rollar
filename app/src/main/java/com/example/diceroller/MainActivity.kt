@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             dice.addAnimatorListener(object : Animator.AnimatorListener {
                 override fun onAnimationStart(animation: Animator) {
                 }
-
+    
                 override fun onAnimationEnd(animation: Animator) {
                     hideDice()
                     val random = (1..6).random()

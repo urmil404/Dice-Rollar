@@ -33,7 +33,7 @@
         app:lottie_autoPlay="false"
         app:lottie_fileName="dice.json"
         app:lottie_loop="false"
-        app:lottie_speed="2" />
+        />
 
     <Button
         android:id="@+id/buttonroll"
